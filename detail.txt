@@ -1,0 +1,9 @@
+FTP Username: eloa@hunaniinfotech.com
+FTP server: ftp.hunaniinfotech.com
+FTP & explicit FTPS port:  21
+password : P#JvEtIsW!0U
+
+database : hunans8r_eloa
+db username : hunans8r_eloa
+password : 4XgTB;wvPxch
+

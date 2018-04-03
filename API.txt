@@ -1,0 +1,129 @@
+1)Login API
+
+Link : http://hunaniinfotech.com/public/mehul/index.php/Api/login
+
+Enter login_type = 1 for direct login
+Enter login_type = 2 for direct Social Login
+
+input: [
+          {"key":"email_id","value":"mehul123@gmail.com","description":""},
+          {"key":"password","value":"123","description":""},
+          {"key":"login_type","value":"1","description":""}]
+
+Output: {
+          "status": true,
+          "data": [
+              {
+                  "id": "37",
+                  "name": "mehul",
+                  "email": "mehul123@gmail.com",
+                  "address": "surat",
+                  "law_firm_name": "test",
+                  "phone": "9879879877",
+                  "area_of_low_id": "trettt",
+                  "password": "202cb962ac59075b964b07152d234b70",
+                  "social_login_type": "fb",
+                  "social_api": "11",
+                  "status": "0",
+                  "created_at": "2018-03-19 05:25:42"
+              }
+          ]
+      } 
+      
+For Social Login
+
+input: [
+          {"key":"email_id","value":"rakesh@gmail.com","description":""},
+          {"key":"login_type","value":"2","description":""},
+          {"key":"social_login_type","value":"facebook","description":""},
+          {"key":"social_api","value":"1123","description":""}]  
+          
+Output: {
+            "status": true,
+            "data": [
+                {
+                    "id": "42",
+                    "name": null,
+                    "email": "rahul@gmail.com",
+                    "address": null,
+                    "law_firm_name": null,
+                    "phone": null,
+                    "area_of_low_id": null,
+                    "password": null,
+                    "social_login_type": "facebook",
+                    "social_api": "1123",
+                    "status": "1",
+                    "created_at": "2018-03-19 08:06:05"
+                }
+            ]
+        }                                 
+
+ 
+
+2) Register API
+
+Link : http://hunaniinfotech.com/public/mehul/index.php/Api/register
+
+input: [
+          {"key":"name","value":"mehul","description":""},
+          {"key":"email","value":"ani@gmail.com","description":""},
+          {"key":"address","value":"","description":""},
+          {"key":"law_firm_name","value":"","description":""},
+          {"key":"phone","value":"","description":""},
+          {"key":"area_of_low_id","value":"","description":""},
+          {"key":"password","value":"123","description":""},
+          {"key":"social_login_type","value":"fb","description":""},
+          {"key":"social_api","value":"11","description":""}]
+          
+Output :
+      {
+          "status": true,
+          "data": {
+              "name": "mehul",
+              "email": "ani@gmail.com",
+              "address": "",
+              "law_firm_name": "",
+              "phone": "",
+              "area_of_low_id": "",
+              "password": "123",
+              "social_login_type": "fb",
+              "social_api": "11",
+              "user_id": 39
+          }
+      }
+
+3) Upload Video 
+
+link: http://hunaniinfotech.com/public/mehul/index.php/Api/update_video
+
+input: [
+          {"key":"video","value":{"0":{}},"description":""},
+          {"key":"user_id","value":"37","description":""},
+          {"key":"keyword","value":"test","description":""},
+          {"key":"title","value":"etet","description":""},
+          {"key":"description","value":"etet","description":""},
+          {"key":"location","value":"suuu","description":""}]
+          
+Output: {"status":true,"message":"video uploaded successfully"}
+
+4) Get Video
+
+link http://hunaniinfotech.com/public/mehul/index.php/Api/get_video
+
+input [{"key":"user_id","value":"37","description":""}]
+
+output: {
+            "status": true,
+            "data": [
+                {
+                    "id": "15",
+                    "user_id": "37",
+                    "video": "http://hunaniinfotech.com/public/mehul/video/20180319055845.mp4",
+                    "keyword": "test",
+                    "title": "etet",
+                    "description": "etet",
+                    "location": "suuu",
+                    "date": "2018-03-19 05:58:45"
+                }
+            ]
+        }          
